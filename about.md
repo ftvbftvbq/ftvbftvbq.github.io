@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### 关于我
 
-### More Information
+超10年IT行业工作经验，分别在互联网金融/O2O/电子商务等行业从事过软件开发/测试工作，目前任职测试负责人一职，主要负责测试技术落地及团队管理工作，努力成为一位出色的测试技术领导者，希望成为能让团队充满正能量的人，拥有原创技术类公众号「思考的犀牛」。
 
-A place to include any other types of information that you'd like to include about yourself.
+### 联系我
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[ftvbftvbq@163.com](mailto:ftvbftvbq@163.com)
