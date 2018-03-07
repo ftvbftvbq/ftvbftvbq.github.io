@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 聊聊“幂等”
-published: false
+published: true
 ---
 幂等的定义
 
