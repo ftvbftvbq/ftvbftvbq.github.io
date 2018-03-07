@@ -1,10 +1,20 @@
 ---
 layout: post
-title: You're up and running!
+title: 聊聊“幂等”
+published: false
 ---
+幂等的定义
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+    从数学的角度来说，就是无论处理多少次，返回的结果和处理一次是一样的，比如：1的n次方和1。
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+    幂等性是系统对外的一种承诺而不是实现，承诺只要接口调用成功，外部系统调用一次和多次的影响是一致的。声明为幂等的接口认为外部系统调用失败是常态，并且失败之后一定会有重试。 
+    
+操作的幂等说明
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+-对数据的读操作，在数据不变的情况下，无论执行多少次，返回的结果也是一直的，是天然的幂等性；
+
+-对数据的删除操作，也是幂等性的，因为不论是删除一次还是删除多次，实现的效果是一致的；
+
+-对于数据的新增操作，因为可能向数据库中插入重复的多条记录，因为不是幂等性的；
+
+对于数据的更新操作，也会出现多次重复被更新的情况，一次也不是幂等性的；
